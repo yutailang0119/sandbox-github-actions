@@ -1,3 +1,6 @@
 {
-    "name": "sandbox-textlint-actions"
+    "name": "sandbox-textlint-actions",
+    "devDependencies": {
+        "textlint": "^11.7.6"
+    }
 }
