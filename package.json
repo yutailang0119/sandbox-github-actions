@@ -1,5 +1,8 @@
 {
     "name": "sandbox-textlint-actions",
+    "scripts": {
+        "lint": "textlint 'docs/**/*.md'"
+    },
     "devDependencies": {
         "textlint": "^11.7.6"
     }
