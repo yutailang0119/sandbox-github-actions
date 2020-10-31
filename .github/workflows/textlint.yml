@@ -1,0 +1,20 @@
+name: textlint
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/textlint.yml
+      - 'docs/**/*.md'
+
+jobs:
+  textlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - name: run textlint
+        run: |
+          ./node_modules/.bin/textlint 'docs/**/*.md' -f json -o textlint-report.json || true
+      - uses: yutailang0119/action-textlint@main
+        with:
+          json_path: textlint-report.json
