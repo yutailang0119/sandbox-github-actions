@@ -15,6 +15,6 @@ jobs:
       - name: run textlint
         run: |
           ./node_modules/.bin/textlint 'docs/**/*.md' -f json -o textlint-report.json || true
-      - uses: yutailang0119/action-textlint@main
+      - uses: yutailang0119/action-textlint@v1
         with:
           json_path: textlint-report.json
