@@ -3,7 +3,7 @@ name: textlint-with-file
 on:
   pull_request:
     paths:
-      - .github/workflows/textlint.yml
+      - .github/workflows/textlint-with-file.yml
       - 'docs/**/*.md'
 
 jobs:
