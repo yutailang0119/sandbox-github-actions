@@ -1,5 +1,5 @@
 {
-    "name": "sandbox-action-textlint",
+    "name": "action-textlint",
     "scripts": {
         "lint": "textlint 'docs/**/*.md'"
     },
