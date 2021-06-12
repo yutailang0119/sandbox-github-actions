@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - .github/workflows/textlint-with-file.yml
-      - 'docs/**/*.md'
+      - 'textlint/docs/**/*.md'
 
 jobs:
   textlint:
