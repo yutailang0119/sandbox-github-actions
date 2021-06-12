@@ -1,10 +1,10 @@
 {
-    "name": "sandbox-action-textlint",
+    "name": "action-textlint",
     "scripts": {
         "lint": "textlint 'docs/**/*.md'"
     },
     "devDependencies": {
-        "textlint": "^11.7.6",
+        "textlint": "^12.0.0",
         "textlint-rule-preset-ja-technical-writing": "^4.0.1"
     }
 }

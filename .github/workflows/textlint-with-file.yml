@@ -1,0 +1,23 @@
+name: textlint-with-file
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/textlint-with-file.yml
+      - 'docs/**/*.md'
+
+jobs:
+  textlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+        working-directory: ./textlint
+      - name: run textlint
+        run: |
+          ./node_modules/.bin/textlint 'docs/**/*.md' -f json -o textlint-report.json || true
+        working-directory: ./textlint
+      - uses: yutailang0119/action-textlint@v1
+        with:
+          json_path: textlint-report.json
+        working-directory: ./textlint
