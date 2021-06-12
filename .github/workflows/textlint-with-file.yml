@@ -4,7 +4,7 @@ on:
   pull_request:
     paths:
       - .github/workflows/textlint-with-file.yml
-      - 'docs/**/*.md'
+      - 'textlint/docs/**/*.md'
 
 jobs:
   textlint:
@@ -19,5 +19,4 @@ jobs:
         working-directory: ./textlint
       - uses: yutailang0119/action-textlint@v1
         with:
-          json_path: textlint-report.json
-        working-directory: ./textlint
+          json_path: ./textlint/textlint-report.json
