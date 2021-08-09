@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-  github-pr-release/staging:
+  github-pr-release-staging:
     needs: checkout
     runs-on: ubuntu-latest
     steps:
@@ -19,7 +19,7 @@ jobs:
           token: ${{ github.token }}
           production_branch: y7g/github-pr-release/production
           staging_branch: y7g/github-pr-release/staging
-  github-pr-release/empty:
+  github-pr-release-empty:
     needs: checkout
     runs-on: ubuntu-latest
     steps:
