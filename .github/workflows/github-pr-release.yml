@@ -28,3 +28,5 @@ jobs:
           token: ${{ github.token }}
           production_branch: y7g/github-pr-release/production
           staging_branch: y7g/github-pr-release/empty
+          dry_run: true
+
