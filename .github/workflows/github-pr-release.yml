@@ -9,12 +9,12 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
   github-pr-release-staging:
     needs: checkout
     runs-on: ubuntu-latest
     steps:
-      - uses: yutailang0119/action-github-pr-release@main
+      - uses: yutailang0119/action-github-pr-release@v1.1.0
         with:
           token: ${{ github.token }}
           production_branch: y7g/github-pr-release/production
@@ -24,7 +24,7 @@ jobs:
     needs: checkout
     runs-on: ubuntu-latest
     steps:
-      - uses: yutailang0119/action-github-pr-release@main
+      - uses: yutailang0119/action-github-pr-release@v1.1.0
         with:
           token: ${{ github.token }}
           production_branch: y7g/github-pr-release/production
