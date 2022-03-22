@@ -18,6 +18,6 @@ jobs:
         run: |
           echo "::set-output name=TEXTLINT_OUTPUT::$(./node_modules/.bin/textlint 'docs/**/*.md' -f json)"
         working-directory: ./textlint
-      - uses: yutailang0119/action-textlint@v1.0.1
+      - uses: yutailang0119/action-textlint@v3
         with:
           textlint_output: ${{ steps.run-textlint.outputs.TEXTLINT_OUTPUT }}
