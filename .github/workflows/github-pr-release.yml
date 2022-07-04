@@ -4,6 +4,9 @@ on:
   push:
     branches:
     - 'y7g/github-pr-release/**'
+  pull_request:
+    paths:
+      - .github/workflows/github-pr-release.yml
   workflow_dispatch:
 
 jobs:
