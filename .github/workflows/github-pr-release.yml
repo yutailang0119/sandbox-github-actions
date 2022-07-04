@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - 'y7g/github-pr-release/**'
+  workflow_dispatch:
 
 jobs:
   checkout:
