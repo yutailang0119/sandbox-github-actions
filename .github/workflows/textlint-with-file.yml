@@ -19,4 +19,4 @@ jobs:
         working-directory: ./textlint
       - uses: yutailang0119/action-textlint@v3.0.0
         with:
-          json_path: ./textlint/textlint-report.json
+          report-path: ./textlint/textlint-report.json
