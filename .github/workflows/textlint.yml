@@ -20,4 +20,4 @@ jobs:
         working-directory: ./textlint
       - uses: yutailang0119/action-textlint@v3.0.0
         with:
-          textlint_output: ${{ steps.run-textlint.outputs.TEXTLINT_OUTPUT }}
+          textlint-output: ${{ steps.run-textlint.outputs.TEXTLINT_OUTPUT }}
