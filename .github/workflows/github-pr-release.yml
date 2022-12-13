@@ -13,7 +13,7 @@ jobs:
   checkout:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.0.2
+      - uses: actions/checkout@v3.2.0
   github-pr-release-staging:
     needs: checkout
     runs-on: ubuntu-latest
