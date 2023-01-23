@@ -4,7 +4,7 @@
         "lint": "textlint 'docs/**/*.md'"
     },
     "devDependencies": {
-        "textlint": "^12.5.1",
+        "textlint": "^12.6.0",
         "textlint-rule-preset-ja-technical-writing": "^7.0.0"
     }
 }
