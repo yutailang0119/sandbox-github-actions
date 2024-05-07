@@ -10,7 +10,7 @@ jobs:
   textlint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.3
+      - uses: actions/checkout@v4.1.5
       - run: npm install
         working-directory: ./textlint
       - name: run textlint
