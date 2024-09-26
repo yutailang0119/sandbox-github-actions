@@ -10,7 +10,7 @@ jobs:
   android-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.0
       - uses: yutailang0119/action-android-lint@v4.0.0
         with:
           report-path: ./android-lint/build/reports/*.xml
