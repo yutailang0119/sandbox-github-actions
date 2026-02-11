@@ -5,6 +5,8 @@ on:
     paths:
       - .github/workflows/textlint.yml
       - 'textlint/docs/**/*.md'
+      - 'textlint/package.json'
+      - 'textlint/package-lock.json'
 
 jobs:
   textlint:
