@@ -4,9 +4,7 @@ on:
   pull_request:
     paths:
       - .github/workflows/textlint.yml
-      - 'textlint/docs/**/*.md'
-      - 'textlint/package.json'
-      - 'textlint/package-lock.json'
+      - 'textlint/**'
 
 jobs:
   textlint:
